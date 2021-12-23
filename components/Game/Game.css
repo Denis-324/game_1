@@ -1,0 +1,108 @@
+.game {
+  width: 100%;
+  max-width: 920px;
+  margin: 60px auto 0 auto;
+  text-align: center;
+  padding: 0px 10px 0 10px;
+}
+.game__title {
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(104, 87, 87);
+  margin-bottom: 30px;
+}
+.game__discription {
+  font-size: 18px;
+  color: rgb(90, 77, 77);
+}
+.game__discription_mt {
+  margin-top: 30px;
+  font-size: 18px;
+  color: rgb(90, 77, 77);
+}
+.game__discription_mt2 {
+  margin-top: 30px;
+  font-size: 18px;
+  color: rgb(90, 77, 77);
+}
+.game__discription span {
+  font-size: 25px;
+  color: rgb(155, 82, 82);
+}
+.game__input {
+  height: 50px;
+  padding: 0 20px;
+  border-radius: 5px;
+  width: 200px;
+  font-size: 25px;
+  transition: box-shadow 0.2s ease 0s;
+  background-color: cadetblue;
+  color: beige;
+  border: 2px solid #2427226b;
+}
+.game__input:focus {
+  box-shadow: 0 0 20px #7a956b;
+  outline: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.game__input::placeholder {
+  font-size: 20px;
+}
+.game__button {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  background-color: #6b958a;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 0 5px 0 #161b13;
+  transition: background-color 0.5s ease 0s;
+  position: relative;
+  top: 0;
+  margin-top: 15px;
+}
+
+.game__button:hover {
+  background-color: #465d61;
+}
+.game__button:active {
+  top: 3px;
+  box-shadow: 0 2px 0 #161b13;
+}
+.game__button_disabled {
+  box-shadow: 0 0 20px #9e2506;
+}
+.game__flex {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  justify-content: space-between;
+  margin: 30px auto 20px auto;
+  height: 160px;
+}
+.game__list {
+  font-size: 14px;
+  color: rgb(90, 77, 77);
+  text-align: left;
+}
+@media (max-width: 400px) {
+  .game__button {
+    width: 107px;
+  }
+  .game__input {
+    width: 107px;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,54 @@
+.random-save {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 445px;
+  margin: 50px auto 0 auto;
+  padding: 0 10px 0 10px;
+}
+
+.random-save__button {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  background-color: #6b958a;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 0 5px 0 #161b13;
+  transition: background-color 0.5s ease 0s;
+  position: relative;
+  top: 0;
+}
+.random-save__button:hover {
+  background-color: #465d61;
+}
+.random-save__button:active {
+  top: 3px;
+  box-shadow: 0 2px 0 #161b13;
+}
+.random-save__open {
+  width: 200px;
+  height: 50px;
+  background-color: rgb(74, 107, 107);
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 20px;
+}
+
+@media (max-width: 435px) {
+  .random-save {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .random-save__open {
+    margin-bottom: 30px;
+  }
+}
